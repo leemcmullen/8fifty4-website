@@ -1,0 +1,89 @@
+﻿@_8fifty4Blue: #44BFFF;
+
+h1, h2, h3, h4, h5, h6 {
+    color: #666;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.body-standard {
+    padding-top: 80px;
+
+    .body-content {
+        padding-top: 20px;
+    }
+}
+
+.navbar-brand {
+    height: auto;
+
+    img {
+        height: 50px;
+    }
+}
+
+.navbar-nav {
+    margin-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+p.lead {
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.company-reg {
+    text-align: right;
+}
+
+.btn {
+    text-transform: none;
+}
+
+.btn-lg {
+    font-size: 18px;
+}
+
+/*@media(min-width: 768px) {
+    .home-buttons-main {
+        div[class^="col-"]:first-child {
+            border-right: 5px solid #ccc;
+            text-align: right;
+        }
+
+        div[class^="col-"]:last-child {
+            text-align: left;
+        }
+    }
+}*/
+
+@media(max-width: 768px) {
+    body {
+        padding-top: 20px;
+    }
+
+    .jumbotron {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .home-buttons-main {
+        div[class^="col-"]:first-child {
+            border-right: none;
+        }
+
+        div[class^="col-"] {
+            text-align: center;
+        }
+    }
+
+    footer p, .company-reg {
+        text-align: center;
+    }
+}
