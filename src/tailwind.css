@@ -3,6 +3,7 @@
 @source "../index.html";
 @source "../hgvme.html";
 @source "../hgvme/index.html";
+@source "../hgvme-privacy-policy/index.html";
 
 @theme {
   --color-brand: #00a300;

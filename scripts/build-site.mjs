@@ -16,7 +16,7 @@ for (const file of rootFiles) {
   }
 }
 
-for (const directory of ["hgvme", "icons", "images"]) {
+for (const directory of ["hgvme", "hgvme-privacy-policy", "icons", "images"]) {
   cpSync(directory, `${outputDir}/${directory}`, { recursive: true });
 }
 
