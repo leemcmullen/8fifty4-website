@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@source "../index.html";
+@source "../hgvme.html";
+@source "../hgvme/index.html";
+
+@theme {
+  --color-brand: #00a300;
+  --color-brand-soft: #31cf49;
+  --color-bg: #050807;
+  --color-bg-soft: #0a0f0d;
+  --color-panel: #101814;
+  --color-border: #1b2b22;
+}
+
+@layer base {
+  body {
+    @apply m-0 bg-bg text-slate-100 antialiased;
+    background-image: radial-gradient(circle at 15% 15%, #0f2015 0%, #050807 42%, #040605 100%);
+  }
+}
+
+@layer components {
+  .glass-header {
+    @apply sticky top-0 z-20 border-b border-brand-soft/20 bg-bg/75 backdrop-blur;
+  }
+
+  .brand-btn {
+    @apply inline-flex items-center rounded-full bg-linear-to-r from-brand to-brand-soft px-6 py-3 font-semibold text-white shadow-[0_10px_26px_rgba(0,163,0,0.28)] transition hover:-translate-y-0.5 hover:from-[#00b800] hover:to-[#4de668];
+  }
+
+  .outline-btn {
+    @apply inline-flex items-center rounded-full border border-white/30 px-6 py-3 font-semibold text-slate-100 transition hover:-translate-y-0.5 hover:border-white/60 hover:text-white;
+  }
+
+  .section-panel {
+    @apply rounded-2xl border border-border bg-panel/95 shadow-2xl shadow-black/40;
+  }
+
+  .feature-card {
+    @apply rounded-2xl border border-border bg-panel p-7;
+  }
+}
+
+@layer utilities {
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 800ms ease, transform 800ms ease;
+    will-change: opacity, transform;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en-GB">
 <head>
   <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
@@ -9,54 +9,150 @@
   <link rel="shortcut icon" href="icons/favicon.ico">
   <meta name="msapplication-TileColor" content="#00a300">
   <meta name="msapplication-config" content="icons/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#050807">
 
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>8fifty4 | Custom Software Solutions for Web and Mobile</title>
+  <meta name="description" content="8fifty4 builds business process applications for web and native mobile, helping organisations move faster with robust software.">
+  <title>8fifty4 | Business Process Applications for Web & Mobile</title>
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/site.min.css">
-
-  <script type="text/javascript">
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-55592042-1', 'auto');
-    ga('require', 'displayfeatures');
-    ga('send', 'pageview');
-  </script>
-
+  <link rel="stylesheet" href="css/tailwind.css">
 </head>
 <body>
-  <div class="container body-content">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="jumbotron">
-          <img src="images/8fifty4.png" alt="8fifty4 Logo" class="img-responsive" />
-          <p class="lead">8fifty4 build software solutions for the web and mobile devices.</p>
-          <p>We specialise in building custom software applications to simplify complex business processes.</p>
-          <div class="row home-buttons-main">
-            <div class="col-sm-12 text-center">
-              <h2>Get in touch</h2>
-              <p><a href="mailto:hello@8fifty4.com" class="btn btn-success btn-lg"><i class="fa fa-envelope"></i> hello@8fifty4.com</a></p>
-            </div>
+  <header class="glass-header">
+    <div class="mx-auto flex min-h-[84px] w-full max-w-6xl items-center justify-between px-5 md:px-8">
+      <div class="reveal flex w-full items-center justify-between">
+        <img src="images/8fifty4.png" alt="8fifty4 logo" class="w-[180px] max-w-[50vw]">
+        <a href="#contact" class="brand-btn px-5 py-2.5 text-sm">Contact us</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="px-5 pb-16 pt-16 md:px-8 md:pt-24">
+      <div class="mx-auto max-w-6xl">
+        <div class="section-panel reveal p-7 md:p-12">
+          <p class="mb-4 text-xs tracking-[0.18em] text-brand-soft uppercase">Software agency</p>
+          <h1 class="mb-4 max-w-4xl text-4xl leading-tight font-semibold text-white md:text-6xl md:leading-[1.1]">Apps that make operations effortless</h1>
+          <p class="mb-8 max-w-3xl text-lg text-slate-300">
+            8fifty4 designs and delivers bespoke software for web and native mobile.
+            We replace manual bottlenecks with elegant, secure systems your team actually wants to use.
+          </p>
+          <div class="flex flex-wrap gap-3.5">
+            <a href="#services" class="brand-btn">Explore services</a>
+            <a href="#contact" class="outline-btn">Start a project</a>
           </div>
         </div>
       </div>
-    </div>
-    <hr />
-    <footer>
-      <div class="row">
-        <div class="col-sm-4 col-xs-12"><p>8fifty4 Ltd</p></div>
-        <div class="col-sm-8 col-xs-12"><p class="company-reg">UK Registered: 08922984</p></div>
+    </section>
+
+    <section id="services" class="px-5 py-16 md:px-8">
+      <div class="mx-auto max-w-6xl">
+        <div class="reveal mb-8">
+          <p class="mb-4 text-xs tracking-[0.18em] text-brand-soft uppercase">What we build</p>
+          <h2 class="max-w-3xl text-3xl leading-tight font-semibold text-white md:text-4xl">High-impact software for modern operations</h2>
+        </div>
+        <div class="grid grid-cols-1 gap-5 lg:grid-cols-3">
+          <article class="feature-card reveal">
+            <svg class="mb-3 h-8 w-8 text-brand-soft" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="12" rx="1.5"></rect>
+              <path d="M8 20h8M12 16v4"></path>
+            </svg>
+            <h3 class="mb-2 text-2xl font-semibold text-white">Web applications</h3>
+            <p class="text-slate-300">Powerful internal platforms, customer portals, and workflow systems optimised for speed and reliability.</p>
+          </article>
+          <article class="feature-card reveal">
+            <svg class="mb-3 h-8 w-8 text-brand-soft" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <rect x="7" y="2.5" width="10" height="19" rx="2"></rect>
+              <path d="M11 18.5h2"></path>
+            </svg>
+            <h3 class="mb-2 text-2xl font-semibold text-white">Native mobile apps</h3>
+            <p class="text-slate-300">iOS and Android apps that bring your business process into the field with secure, intuitive user experiences.</p>
+          </article>
+          <article class="feature-card reveal">
+            <svg class="mb-3 h-8 w-8 text-brand-soft" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M10 3h4l.7 2.3a7.6 7.6 0 0 1 1.8.8L19.6 5l2.8 2.8-1.1 2.1c.3.6.6 1.2.8 1.8L24 12v4l-2.3.7c-.2.6-.5 1.2-.8 1.8l1.1 2.1-2.8 2.8-2.1-1.1c-.6.3-1.2.6-1.8.8L14 24h-4l-.7-2.3c-.6-.2-1.2-.5-1.8-.8l-2.1 1.1-2.8-2.8 1.1-2.1a7.6 7.6 0 0 1-.8-1.8L0 16v-4l2.3-.7c.2-.6.5-1.2.8-1.8L2 7.4 4.8 4.6l2.1 1.1c.6-.3 1.2-.6 1.8-.8L10 3z"></path>
+              <circle cx="12" cy="14" r="3.2"></circle>
+            </svg>
+            <h3 class="mb-2 text-2xl font-semibold text-white">Process automation</h3>
+            <p class="text-slate-300">From data capture to approvals and reporting, we automate repeatable work so your team can focus on outcomes.</p>
+          </article>
+        </div>
       </div>
-    </footer>
-  </div>
+    </section>
+
+    <section class="border-y border-brand-soft/10 bg-bg-soft/75 px-5 py-16 md:px-8">
+      <div class="mx-auto grid max-w-6xl grid-cols-1 gap-6 lg:grid-cols-[1.25fr_1fr]">
+        <div class="section-panel reveal p-8">
+          <p class="mb-4 text-xs tracking-[0.18em] text-brand-soft uppercase">How we work</p>
+          <h2 class="mb-4 text-3xl leading-tight font-semibold text-white md:text-4xl">Strategic thinking. Practical delivery.</h2>
+          <ul class="list-disc space-y-3 pl-5 text-slate-300">
+            <li><strong>Discover:</strong> map your current process and identify high-value improvement points.</li>
+            <li><strong>Design:</strong> craft user journeys and interfaces that feel sharp, fast, and familiar.</li>
+            <li><strong>Develop:</strong> deliver production-ready software with quality, security, and scalability built in.</li>
+            <li><strong>Evolve:</strong> continuously improve with analytics, feedback loops, and roadmap support.</li>
+          </ul>
+        </div>
+        <div class="section-panel reveal grid gap-4 p-8">
+          <div class="rounded-xl border border-border bg-bg/55 p-5">
+            <p class="mb-1 text-2xl font-bold text-brand-soft">Web + mobile</p>
+            <p class="text-slate-300">One connected product experience</p>
+          </div>
+          <div class="rounded-xl border border-border bg-bg/55 p-5">
+            <p class="mb-1 text-2xl font-bold text-brand-soft">Business-first</p>
+            <p class="text-slate-300">Every feature tied to measurable process gains</p>
+          </div>
+          <div class="rounded-xl border border-border bg-bg/55 p-5">
+            <p class="mb-1 text-2xl font-bold text-brand-soft">UK-based</p>
+            <p class="text-slate-300">A practical delivery partner for growing organisations</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="px-5 py-16 md:px-8">
+      <div class="mx-auto max-w-6xl">
+        <div class="reveal rounded-2xl border border-brand-soft/35 bg-linear-to-br from-brand/15 to-bg/95 p-7 text-center md:p-10">
+          <p class="mb-4 text-xs tracking-[0.18em] text-brand-soft uppercase">Contact us</p>
+          <h2 class="mb-3 text-3xl leading-tight font-semibold text-white md:text-4xl">Let’s create your next operational advantage</h2>
+          <p class="mb-6 text-slate-200">Tell us what you need to modernise, and we’ll help you shape the right software approach.</p>
+          <p>
+            <a href="mailto:hello@8fifty4.com" class="brand-btn">
+              <svg class="mr-2.5 h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="1.8"></rect>
+                <path d="m4 7 8 6 8-6"></path>
+              </svg>
+              hello@8fifty4.com
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-border px-5 py-6 md:px-8 md:py-8">
+    <div class="mx-auto flex max-w-6xl flex-wrap justify-between gap-4 text-slate-400 reveal">
+      <p class="m-0">8fifty4 Ltd</p>
+      <p class="m-0">UK Registered: 08922984</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var elements = document.querySelectorAll(".reveal");
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      elements.forEach(function (element) {
+        observer.observe(element);
+      });
+    })();
+  </script>
 </body>
 </html>

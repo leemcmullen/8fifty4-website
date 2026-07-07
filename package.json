@@ -1,0 +1,26 @@
+{
+  "name": "8fifty4-website",
+  "version": "1.0.0",
+  "description": "8fifty4 static website",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/tailwind.css -o ./css/tailwind.css --minify",
+    "build:site": "node scripts/build-site.mjs",
+    "build": "npm run build:site",
+    "dev:css": "tailwindcss -i ./src/tailwind.css -o ./css/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leemcmullen/8fifty4-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leemcmullen/8fifty4-website/issues"
+  },
+  "homepage": "https://github.com/leemcmullen/8fifty4-website#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.2",
+    "tailwindcss": "^4.3.2"
+  }
+}
